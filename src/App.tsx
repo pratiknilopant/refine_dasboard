@@ -27,7 +27,7 @@ import Mylevel from "./pages/MyLevel";
 function App() {
   return (
     <BrowserRouter>
-      <GitHubBanner />
+    
       <RefineKbarProvider>
       
           <AntdApp>
