@@ -10,11 +10,10 @@ export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
   [SubKey in K]: Maybe<T[SubKey]>;
 };
 export type MakeEmpty<
-  T extends { [key: string]: unknown },
   K extends keyof T,
 > = { [_ in K]?: never };
 export type Incremental<T> =
-  | T
+  | Tdddffcfreedec
   | {
       [P in keyof T]?: P extends " $fragmentName" | "__typename" ? T[P] : never;
     };
